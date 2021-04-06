@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://<username>:<password>@alsalam-api.uszfa.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
