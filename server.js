@@ -1,14 +1,16 @@
 const express = require("express");
 const connectDB = require("./config/db");
+const cors = require("cors");
 const app = express();
+const cookieParser = require("cookie-parser");
 
 // Connect to DB
 connectDB();
 
 // Inital Middlewars
+app.use(cors());
 app.use(express.json({ extended: false }));
-
-app.get("/", (req, res) => res.send("API Running"));
+app.use(cookieParser());
 
 // Define Routes
 app.use("/api/auth", require("./routes/api/auth"));
