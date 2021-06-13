@@ -116,7 +116,7 @@ const Login = ({ setToken, checkUser }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(email, password);
+
     if (email === undefined || password === undefined) {
       setError(true);
       setMsg("حط ايميلك وكلمة السر");

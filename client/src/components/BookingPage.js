@@ -6,7 +6,6 @@ import moment from "moment";
 import leftArrow from "../assets/left-arrow-1.svg";
 import { useEffect, useState } from "react";
 import { Redirect } from "react-router-dom";
-import Cookie from "js-cookie";
 import "date-fns";
 
 import DateFnsUtils from "@date-io/date-fns";
@@ -168,7 +167,6 @@ const useStyle = makeStyles((theme) => ({
 
 export default function BookingPage({ getInfo }) {
   const classes = useStyle();
-  const user = Cookie.getJSON("token") || null;
   const [toCheckout, setToCheckout] = useState(false);
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [timeSlot, setTimeSlot] = useState([]);

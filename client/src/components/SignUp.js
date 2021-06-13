@@ -89,62 +89,6 @@ const useStyles = makeStyles((theme) => ({
   alert: {
     width: "100%",
   },
-  // root: {
-  //   width: "80%",
-  //   margin: "1rem auto",
-  //   "& .MuiTextField-root": {
-  //     fontSize: "2rem",
-  //   },
-  //   display: "flex",
-  //   flexDirection: "column",
-  //   alignItems: "center",
-  // },
-  // form: {
-  //   display: "flex",
-  //   flexDirection: "column",
-  //   justifyContent: "center",
-  //   alignItems: "center",
-  // },
-  // heading: {
-  //   fontSize: "3rem",
-  //   color: "#fff",
-  //   textAlign: "center",
-  // },
-  // field: {
-  //   direction: "rtl",
-  //   "& .MuiInputBase-input": {
-  //     fontFamily: "Tajawal",
-  //     fontSize: "2rem",
-  //   },
-  // },
-  // formContainer: {
-  //   width: "750px",
-  //   backgroundColor: "#fff",
-  //   color: "#333",
-  //   border: "5px solid #333",
-  //   // margin: "1rem 0 ",
-  //   direction: "rtl",
-  //   display: "grid",
-  //   gridTemplateColumns: "1fr",
-  //   justifyContent: "center",
-  //   padding: "1rem 2rem",
-  // },
-  // buttonStyle: {
-  //   background: " #21ACFA ",
-  //   color: "#fff",
-  //   borderRadius: "5px",
-  //   fontSize: "1.2rem",
-  //   fontFamily: "Tajawal",
-  //   marginTop: "2rem",
-  //   transition: "all 0.5s ease",
-  //   "&:hover": {
-  //     background: "#1A8ACA",
-  //   },
-  // },
-
-  // alert: {
-  //   width: "100%",
-  // },
 }));
 
 const registerUser = async (userData) => {
@@ -175,7 +119,7 @@ const SignUp = ({ checkUser }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(name, email, password);
+
     if (
       name === undefined ||
       email === undefined ||
