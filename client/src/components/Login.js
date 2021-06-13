@@ -92,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
 
 const loginUser = async (userData) => {
   try {
-    const data = await fetch("http://localhost:5000/api/auth", {
+    const data = await fetch("alsalam-app.herokuapp.com/api/auth", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
