@@ -175,7 +175,7 @@ export default function BookingPage({ getInfo }) {
 
   const displayBookings = async (date) => {
     try {
-      const data = await fetch("http://localhost:5000/api/bookings/all", {
+      const data = await fetch("/api/bookings/all", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

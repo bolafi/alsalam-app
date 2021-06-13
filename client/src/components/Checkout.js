@@ -105,7 +105,7 @@ export default function Checkout({ bookingInfo, user, forceFetch }) {
     try {
       if (Cookies.get("token")) {
         const { token: clientToken } = JSON.parse(Cookies.get("token"));
-        const data = await fetch("http://localhost:5000/api/bookings", {
+        const data = await fetch("/api/bookings", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
