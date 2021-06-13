@@ -66,7 +66,7 @@ export default function App() {
     try {
       if (Cookies.get("token")) {
         const { token: clientToken } = JSON.parse(Cookies.get("token"));
-        const data = await fetch("http://localhost:5000/api/auth", {
+        const data = await fetch("/api/auth", {
           method: "GET",
           headers: {
             Authorization: clientToken,
