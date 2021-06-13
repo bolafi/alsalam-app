@@ -93,7 +93,7 @@ const useStyles = makeStyles((theme) => ({
 
 const registerUser = async (userData) => {
   try {
-    const data = await fetch("http://localhost:5000/api/users", {
+    const data = await fetch("/api/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
