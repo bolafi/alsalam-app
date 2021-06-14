@@ -120,20 +120,20 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     direction: "rtl",
     [theme.breakpoints.up("xs")]: {
-      padding: "0.5rem 1.25rem",
+      padding: "0.5rem 1rem",
       fontSize: "1rem",
       margin: "8px 0",
     },
     [theme.breakpoints.up("sm")]: {
-      fontSize: "0.8rem",
-      margin: "0 0.5rem",
+      fontSize: "1rem",
+      padding: "0.5rem 1.25rem",
     },
     [theme.breakpoints.up("md")]: {
-      fontSize: "1rem",
+      fontSize: "1.2rem",
       margin: "0 2rem",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "1.2rem",
+      fontSize: "1.4rem",
       margin: "0 3rem",
     },
   },

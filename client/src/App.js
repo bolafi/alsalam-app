@@ -12,6 +12,8 @@ import Login from "./components/Login";
 import WhoAreWe from "./components/WhoAreWe";
 import bg from "./assets/field2.jpg";
 import Cookies from "js-cookie";
+import PrivateRoute from "./components/PrivateRoute";
+import PageNotFound from "./components/PageNotFound";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,25 +33,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       width: "100%",
       maxWidth: "90%",
-    },
-  },
-  banner: {
-    maxWidth: "750px",
-    backgroundColor: "#fff",
-    color: "#333",
-    border: "5px solid #333",
-    margin: "15rem auto 0 ",
-    direction: "rtl",
-    textAlign: "center",
-    padding: "4rem 0",
-    [theme.breakpoints.down("xs")]: {
-      width: "300px",
-      padding: "1rem",
-    },
-  },
-  bannerHeading: {
-    [theme.breakpoints.down("xs")]: {
-      fontSize: "1rem",
     },
   },
 }));
@@ -102,51 +85,47 @@ export default function App() {
         <CssBaseline />
         <Header user={user} loggedIn={loggedIn} logoutUser={logoutUser} />
         <Switch>
-          <>
-            <Route
-              path="/signup"
-              render={(props) => <Signup {...props} checkUser={checkUser} />}
-            />
-            <Route
-              path="/login"
-              render={(props) => <Login {...props} checkUser={checkUser} />}
-            />
-            <Route path="/whoarewe" component={WhoAreWe} />
-            <Route exact path="/" component={Hero} />
-
-            {loggedIn ? (
-              <>
-                <Route
-                  path="/profile"
-                  render={(props) => <MyProfile {...props} user={user} />}
-                />
-                <Route
-                  path="/booking"
-                  render={(props) => (
-                    <BookingPage {...props} getInfo={setInfo} />
-                  )}
-                />
-                <Route
-                  path="/checkout"
-                  render={(props) => (
-                    <Checkout
-                      {...props}
-                      bookingInfo={info}
-                      user={user}
-                      forceFetch={checkUser}
-                    />
-                  )}
-                />
-              </>
-            ) : (
-              <div className={classes.banner}>
-                <h1 className={classes.bannerHeading}>
-                  يجب عليك التسجيل للوصول إلى صفحة الحجز
-                </h1>
-              </div>
-              // <Route path="/whoarewe" component={WhoAreWe} />
-            )}
-          </>
+          <Route
+            path="/signup"
+            render={(props) => <Signup {...props} checkUser={checkUser} />}
+          />
+          <Route
+            path="/login"
+            render={(props) => <Login {...props} checkUser={checkUser} />}
+          />
+          <Route path="/whoarewe" component={WhoAreWe} />
+          <Route exact path="/" component={Hero} />
+          <PrivateRoute
+            component={MyProfile}
+            path="/profile"
+            exact
+            loggedIn={loggedIn}
+            user={user}
+          />
+          <PrivateRoute
+            component={BookingPage}
+            loggedIn={loggedIn}
+            getInfo={setInfo}
+            path="/booking"
+            exact
+          />
+          <PrivateRoute
+            component={MyProfile}
+            loggedIn={loggedIn}
+            user={user}
+            path="/profile"
+            exact
+          />
+          <PrivateRoute
+            component={Checkout}
+            path="/checkout"
+            exact
+            loggedIn={loggedIn}
+            bookingInfo={info}
+            user={user}
+            forceFetch={checkUser}
+          />
+          <Route path="/*" component={PageNotFound} />
         </Switch>
       </div>
     </div>

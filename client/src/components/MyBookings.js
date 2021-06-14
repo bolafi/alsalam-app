@@ -59,10 +59,21 @@ const useStyles = makeStyles({
 export default function MyBookings({ bookingData }) {
   const classes = useStyles();
 
+  // This function to display (صباحا او مساءا) depends on the time and if the time was booked is only one it removes the pipeline || if more it spereate the timings with it
   const changeAmPm = (book) => {
-    const [time] = book;
-    const p1 = time.split(" ")[0];
-    return time.split(" ")[1] === "am" ? ` ${p1} صباحا` : `${p1} مساءا`;
+    if (book.length === 1) {
+      return book.map((time) => {
+        const p1 = time.split(" ")[0];
+        return time.split(" ")[1] === "am" ? ` ${p1} صباحا ` : ` ${p1} مساءا `;
+      });
+    } else {
+      return book.map((time) => {
+        const p1 = time.split(" ")[0];
+        return time.split(" ")[1] === "am"
+          ? ` ${p1} صباحا ||`
+          : ` ${p1} مساءا ||`;
+      });
+    }
   };
 
   return (

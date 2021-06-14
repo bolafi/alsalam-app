@@ -31,6 +31,11 @@ router.post("/", auth, async (req, res) => {
   const { selectedDate, timeSlot } = req.body;
   let slots = timeSlot.map((slot) => Slots[slot]);
 
+  // FUNCTION TO CALCULATE THE BOOKING PRICE
+  const getTotalPayment = (arr) => {
+    return arr.reduce((total, amount) => total + amount);
+  };
+
   try {
     const checkBooking = await Booking.find({ selectedDate });
 
@@ -59,7 +64,10 @@ router.post("/", auth, async (req, res) => {
     booking.bookingNumber = shortid.generate();
     booking.bookingDate = newBooking.selectedDate;
     booking.bookingTime = newBooking.timeSlot.slot.map((item) => item.time);
-    booking.bookingPrice = newBooking.timeSlot.slot.map((item) => item.price);
+    console.log(booking.bookingTime);
+    booking.bookingPrice = newBooking.timeSlot.slot
+      .map((item) => item.price)
+      .reduce((total, amount) => total + amount);
 
     const user = await User.findOne({ _id: userId });
     user.bookings.unshift(booking);
