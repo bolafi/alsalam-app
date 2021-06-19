@@ -10,6 +10,7 @@ import Checkout from "./components/Checkout";
 import Signup from "./components/SignUp";
 import Login from "./components/Login";
 import WhoAreWe from "./components/WhoAreWe";
+import Promo from "./components/Promo";
 import bg from "./assets/field2.jpg";
 import Cookies from "js-cookie";
 import PrivateRoute from "./components/PrivateRoute";
@@ -94,6 +95,7 @@ export default function App() {
             render={(props) => <Login {...props} checkUser={checkUser} />}
           />
           <Route path="/whoarewe" component={WhoAreWe} />
+          <Route path="/promo" component={Promo} />
           <Route exact path="/" component={Hero} />
           <PrivateRoute
             component={MyProfile}
