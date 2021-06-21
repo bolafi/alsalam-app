@@ -1,4 +1,4 @@
 {
-  "mongoURI": "MONGOURI",
-  "jwtSecret": "JWTSECRET"
+  "mongoURI": "mongodb+srv://bolafi:figo513@alsalam-api.uszfa.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "jwtSecret": "cukur"
 }
