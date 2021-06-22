@@ -11,10 +11,9 @@ router.post(
   [
     check("name", "Name is required").not().isEmpty(),
     check("email", "Email is require").isEmail(),
-    check(
-      "password",
-      "Password should not be less than 6 characters"
-    ).isLength({ min: 6 }),
+    check("password", "Password should not be less than 6 characters").isLength(
+      { min: 6 }
+    ),
     check("phone", "Phone is required").not().isEmpty(),
   ],
   async (req, res) => {
@@ -47,7 +46,7 @@ router.post(
 
       jwt.sign(
         payload,
-        config.get("jwtSecret"),
+        process.env.JWT_SECRET,
         { expiresIn: 36000 },
         (err, token) => {
           if (err) throw err;
