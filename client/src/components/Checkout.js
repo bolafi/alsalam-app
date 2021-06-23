@@ -97,9 +97,6 @@ export default function Checkout({ bookingInfo, user, forceFetch }) {
   const [error, setError] = useState(false);
   const { timeSlot, selectedDate } = bookingInfo;
 
-  // To extract the name of booking {first, second ...} from timeSlot
-  const time = timeSlot.map((slot) => slot.name);
-
   // Function to create Booking
   const createBooking = async (book) => {
     try {
@@ -141,6 +138,9 @@ export default function Checkout({ bookingInfo, user, forceFetch }) {
       timeSlot: time,
     });
   };
+
+  // To extract the name of booking {first, second ...} from timeSlot
+  const time = timeSlot.map((slot) => slot.name);
 
   // Creating New Array of booking price
   const bookingPrice = timeSlot.map((slot) => slot.price);
