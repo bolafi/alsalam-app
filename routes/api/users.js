@@ -4,8 +4,10 @@ const User = require("../../models/User");
 const { check, validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const config = require("config");
 
+//@route    POST api/users
+//@desc     Create new user
+//@access   Public
 router.post(
   "/",
   [
@@ -60,7 +62,9 @@ router.post(
   }
 );
 
-// Get all users
+//@route    GET api/users
+//@desc     Get all users {for test only not to be used on frontend }
+//@access   Public
 router.get("/", async (req, res) => {
   try {
     const users = await User.find().select("-password");

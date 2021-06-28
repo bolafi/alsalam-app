@@ -24,7 +24,7 @@ router.post("/all", async (req, res) => {
 });
 
 //@route    POST api/booking
-//@desc    Create new booking
+//@desc     Create new booking
 //@access   Private
 router.post("/", auth, async (req, res) => {
   const userId = req.user.id;
