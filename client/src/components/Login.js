@@ -4,6 +4,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Button, TextField } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 import Cookie from "js-cookie";
+import {
+  emailValidation,
+  passwordValidation,
+} from "../Validations/SignUpValidation";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -87,6 +91,7 @@ const useStyles = makeStyles((theme) => ({
   },
   alert: {
     width: "100%",
+    fontFamily: "Tajawal",
   },
 }));
 
@@ -117,9 +122,20 @@ const Login = ({ setToken, checkUser }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (email === undefined || password === undefined) {
+    const isValidEmail = await emailValidation.isValid({ email });
+
+    if (!isValidEmail) {
       setError(true);
-      setMsg("حط ايميلك وكلمة السر");
+      setMsg("الرجاء ادخال ايميل صحيح");
+      setTimeout(() => setError(false), 5000);
+      return;
+    }
+
+    const isValidPassword = await passwordValidation.isValid({ password });
+
+    if (!isValidPassword) {
+      setError(true);
+      setMsg("الرجاء ادخال كلمة سر لاتقل عن 6 احرف");
       setTimeout(() => setError(false), 5000);
       return;
     }

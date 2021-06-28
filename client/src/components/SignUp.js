@@ -4,6 +4,12 @@ import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button, TextField } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
+import {
+  nameValidation,
+  emailValidation,
+  passwordValidation,
+  phoneValidation,
+} from "../Validations/SignUpValidation";
 import Cookie from "js-cookie";
 
 const useStyles = makeStyles((theme) => ({
@@ -88,6 +94,7 @@ const useStyles = makeStyles((theme) => ({
   },
   alert: {
     width: "100%",
+    fontFamily: "Tajawal",
   },
 }));
 
@@ -120,18 +127,40 @@ const SignUp = ({ checkUser }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (
-      name === undefined ||
-      email === undefined ||
-      password === undefined ||
-      phone === undefined
-    ) {
+    const isValidName = await nameValidation.isValid({ name });
+
+    if (!isValidName) {
       setError(true);
-      setMsg(" حط اسمك وايميلك وكلمة السر ورقم الجوال");
+      setMsg("الرجاء ادخال الاسم");
+      setTimeout(() => setError(false), 5000);
+      return;
+    }
+    const isValidEmail = await emailValidation.isValid({ email });
+
+    if (!isValidEmail) {
+      setError(true);
+      setMsg("الرجاء ادخال ايميل صحيح");
       setTimeout(() => setError(false), 5000);
       return;
     }
 
+    const isValidPassword = await passwordValidation.isValid({ password });
+
+    if (!isValidPassword) {
+      setError(true);
+      setMsg("الرجاء ادخال كلمة سر لاتقل عن 6 احرف");
+      setTimeout(() => setError(false), 5000);
+      return;
+    }
+
+    const isValidPhone = await phoneValidation.isValid({ phone });
+
+    if (!isValidPhone) {
+      setError(true);
+      setMsg("الرجاء ادخال رقم جوال صحيح بـ 8 ارقام");
+      setTimeout(() => setError(false), 5000);
+      return;
+    }
     try {
       const token = await registerUser({
         name,
