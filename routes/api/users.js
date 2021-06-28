@@ -1,77 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const User = require("../../models/User");
-const { check, validationResult } = require("express-validator");
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
+const { protect } = require("../../middleware/auth");
+const { registerValidation } = require("../../middleware/validation");
+const { register, getAll } = require("../../controllers/users");
 
-//@route    POST api/users
-//@desc     Create new user
-//@access   Public
-router.post(
-  "/",
-  [
-    check("name", "Name is required").not().isEmpty(),
-    check("email", "Email is require").isEmail(),
-    check("password", "Password should not be less than 6 characters").isLength(
-      { min: 6 }
-    ),
-    check("phone", "Phone is required").not().isEmpty(),
-  ],
-  async (req, res) => {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
-    }
-    const { name, email, password, phone } = req.body;
-
-    try {
-      let user = await User.findOne({ email });
-
-      if (user) {
-        return res.status(401).json({ msg: "Email is exist" });
-      }
-
-      user = new User({ name, email, password, phone });
-
-      // Encrypt password
-      const salt = await bcrypt.genSalt(10);
-      user.password = await bcrypt.hash(password, salt);
-      await user.save();
-
-      // create the token
-      const payload = {
-        user: {
-          id: user.id,
-        },
-      };
-
-      jwt.sign(
-        payload,
-        process.env.JWT_SECRET,
-        { expiresIn: 36000 },
-        (err, token) => {
-          if (err) throw err;
-          res.json({ token });
-        }
-      );
-    } catch (err) {
-      console.error(err.message);
-      res.status(500).json({ msg: "Server Error" });
-    }
-  }
-);
-
-//@route    GET api/users
-//@desc     Get all users {for test only not to be used on frontend }
-//@access   Public
-router.get("/", async (req, res) => {
-  try {
-    const users = await User.find().select("-password");
-    res.status(200).json(users);
-  } catch (error) {
-    res.status(500).json({ msg: "Server Error" });
-  }
-});
+router.get("/", protect, getAll);
+router.post("/", registerValidation, register);
 
 module.exports = router;
