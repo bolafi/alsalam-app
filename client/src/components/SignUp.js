@@ -175,7 +175,7 @@ const SignUp = ({ checkUser }) => {
         history.push("/");
       } else {
         setError(true);
-        setMsg(" البيانات التي ادخلتها غير صحيحة");
+        setMsg(" الايميل الذي ادخلته مسجل لدينا .. الرجاء ادخال ايميل اخر");
         setTimeout(() => setError(false), 5000);
       }
     } catch (error) {
