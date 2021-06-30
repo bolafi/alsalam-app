@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   content: {
-    textAlign: "justify",
+    textAlign: "center",
     fontSize: "1.6rem ",
     fontWeight: "bold",
     padding: "1rem ",

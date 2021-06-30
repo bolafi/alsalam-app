@@ -48,7 +48,7 @@ exports.register = async (req, res, next) => {
 // ****************************************************************************************************//
 //@route    GET api/users
 //@desc     Get all users {for test only not to be used on frontend }
-//@access   Public
+//@access   Private
 exports.getAll = async (req, res) => {
   try {
     const users = await User.find().select("-password");
