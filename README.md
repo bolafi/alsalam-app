@@ -18,4 +18,14 @@
 
 :diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside:
 ---  
+  
+![signup-page](https://user-images.githubusercontent.com/39938519/123954525-2c439f00-d9b1-11eb-8fd0-5f63eaf21e51.png)
+![validation](https://user-images.githubusercontent.com/39938519/123954531-2cdc3580-d9b1-11eb-871f-a0f42cfc34bd.png)
+
+  
+  
+ ### :soccer: في صفحة التسجيل يجب عليك ان تضع بيانات صحيحة منها ايميل صحيح وكلمة سر لاتقل عن 6 رموز ورقم جوال مكون من 8 أرقام :soccer: 
+
+:diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside:
+---    
 </div>
