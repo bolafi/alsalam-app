@@ -69,4 +69,25 @@
 :diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside:
 ---            
   
+ 
+  
+![conformation](https://user-images.githubusercontent.com/39938519/123954509-28178180-d9b1-11eb-931f-44d53d75dcab.png)
+
+  
+  
+ ### :soccer:في صفحة تاكيد الحجز تظهر لنا بيانات الحجز لمراجعتها من قبل المستخدم قبل ان يتم الحجز :soccer: 
+
+:diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside:
+---              
+  
+ 
+  
+![conformation-msg](https://user-images.githubusercontent.com/39938519/123954512-28b01800-d9b1-11eb-8c14-c609431d7e78.png)
+
+  
+  
+ ### :soccer:عند الضغط على زر " تاكيد الحجز "  يتم تخزين معلومات الحجز في قاعدة البيانات وتظهر رسالة تحاكي ارسال ايميل للمستخدم بالحجز  :soccer: 
+
+:diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside:
+---                
 </div>
