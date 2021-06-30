@@ -47,4 +47,26 @@
 
 :diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside:
 ---        
+ 
+  
+![booking-page](https://user-images.githubusercontent.com/39938519/123954503-251c9100-d9b1-11eb-8b24-501e695703ff.png)
+
+  
+  
+ ### :soccer: في صفحة الحجوزات يمكن للمستخدم اختيار يوم الحجز ووقت الحجز من الأوقات المتوفرة :soccer: 
+
+:diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside:
+---          
+  
+ 
+  
+![booking-page-friday](https://user-images.githubusercontent.com/39938519/123954506-26e65480-d9b1-11eb-81f8-ef90e569487b.png)
+
+  
+  
+ ### :soccer: اذا كان يوم الحجز يوافق يوم الجمعة فان الفترة الصباحية لن تكون متاحة للحجز :soccer: 
+
+:diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside::diamond_shape_with_a_dot_inside:
+---            
+  
 </div>
