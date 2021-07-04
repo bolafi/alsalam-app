@@ -157,7 +157,7 @@ const SignUp = ({ checkUser }) => {
 
     if (!isValidPhone) {
       setError(true);
-      setMsg("الرجاء ادخال رقم جوال صحيح بـ 8 ارقام");
+      setMsg("الرجاء ادخال رقم جوال صحيح لا يقل عن 8 ارقام");
       setTimeout(() => setError(false), 5000);
       return;
     }

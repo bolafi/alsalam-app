@@ -21,7 +21,6 @@ exports.registerValidation = [
   }),
   check("phone", "Phone is required").not().isEmpty().isLength({
     min: 8,
-    max: 8,
   }),
   (req, res, next) => {
     const errors = validationResult(req);

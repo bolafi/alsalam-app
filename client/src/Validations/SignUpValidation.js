@@ -1,6 +1,6 @@
 import * as yup from "yup";
 
-const phoneRegEx = /^[0-9]{8}$/;
+const phoneRegEx = /^[0-9]{8,}$/;
 
 export const nameValidation = yup.object().shape({
   name: yup.string().required(),
