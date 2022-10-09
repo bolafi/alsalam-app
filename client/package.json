@@ -16,13 +16,13 @@
     "date-fns": "^2.0.0-beta.5",
     "express": "^4.17.1",
     "js-cookie": "^2.2.1",
-    "json-server": "^0.16.3",
+    "json-server": "^0.4.2",
     "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
