@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use(mongoSanitize());
 
 // Set Security headers
-app.use(helmet({ contentSecurityPolicy: false }));
+//app.use(helmet({ contentSecurityPolicy: false }));
 
 // Prevent xss attacks
 //app.use(xss());
