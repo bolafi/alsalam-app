@@ -28,7 +28,7 @@ app.use(mongoSanitize());
 app.use(helmet({ contentSecurityPolicy: false }));
 
 // Prevent xss attacks
-app.use(xss());
+//app.use(xss());
 
 // Define Routes
 app.use("/api/auth", require("./routes/api/auth"));
