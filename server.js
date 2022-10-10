@@ -22,7 +22,7 @@ app.use(express.json({ extended: false }));
 app.use(cookieParser());
 
 // Sanitize Data
-app.use(mongoSanitize());
+// app.use(mongoSanitize());
 
 // Set Security headers
 //app.use(helmet({ contentSecurityPolicy: false }));
